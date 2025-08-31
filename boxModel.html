@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            max-width: 320px;
+            max-width: 250px;
+            aspect-ratio: 3/2;
+            padding: 20px;
+            border: solid 1px rgb(8, 63, 146);
+            border-radius: 5px;
+            margin: 2rem auto;
+            background: linear-gradient(135deg, #e6eaef, #65aeef);
+            box-shadow: 5px 5px 10px grey;
+        }
+
+        .card:nth-child(1) {
+            border: dotted;
+            background: rgb(218, 206, 206);
+        }
+
+        .card:nth-child(2) {
+            border: double;
+            margin: auto;
+        }
+
+        .card:nth-child(3) {
+            border: dotted;
+            outline: 3px ridge #222;
+            background: linear-gradient(-135deg, #e6eaef, #65aeef);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <article class="card">
+            <h2>Starter</h2>
+            <p>Ideal para projetos simples.</p>
+        </article>
+
+        <article class="card">
+            <h2>Pro</h2>
+            <p>Recursos avançados e suporte.</p>
+        </article>
+
+        <article class="card">
+            <h2>Enterprise</h2>
+            <p>Para grandes equipes e demandas.</p>
+        </article>
+    </div>
+</body>
+
+</html>
